@@ -1,17 +1,14 @@
-export class Vector
-{
-    constructor(x: number, y:number)
-    {
+export class Vector {
+    constructor(x: number, y: number) {
         this.x = x;
         this.y = y;
     }
 
-    public x:number;
-    public y:number
+    public x: number;
+    public y: number;
 
-    flipDirection()
-    {
-        this.x = this.x*-1;
-        this.y = this.y*-1;
+    flipDirection(): void {
+        this.x = -this.x; // this.x * -1;
+        this.y = -this.y; //  * -1;
     }
 }
